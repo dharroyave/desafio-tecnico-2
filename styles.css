@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/girls-marks');
 
-:root{
+:root {
     --color-fondo: #341C2A;
     --color-texto: #FCF7FD;
     --color-enfasis: #3A2136;
@@ -8,18 +8,59 @@
     --tamaño-titulos: 30px;
 }
 
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-body{
-    font-family: 'Girls Marks',sans-serif; 
+body {
+    display: grid;
+    grid-template-rows: auto;
+    height: 100vh;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    font-family: 'Girls Marks', sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-texto);
     overflow-x: hidden;
 }
 
 /* ---------------------HEADER----------------- */
-header{
-    width: 96.5vw;
+header {
+    grid-area: header;
+    background-color: red;
+    padding: 1rem;
+    text-align: right;
+}
+
+/* .logo {
+    width: 100px;
+    height: 10px;
+    border-radius: 50%;
+    padding: auto;
+
+} */
+
+.lista{
+    list-style: none;
+
+}
+
+/* -------------- FOOTER ---------------- */
+footer {
+    grid-area: footer;
+    background-color: #341C2A;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1,5rem;
+}
+
+.redes {
+list-style: none;
+text-align: center;
+padding: 2rem;
 }

@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bossvanrave.dev</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- Nav -->
     <header>
       <nav>
-        <img src="./images/logo.jpg" alt="logo" />
+        <div class="logo" > 
+        <img src="./images/logo.jpg" alt="logo"/>
+        </div>
+
+        <div class="lista">
         <ol>
           <li>Home</li>
           <li>Proyectos</li>
@@ -18,12 +22,13 @@
           <li>Sobre me</li>
           <li>Contacto</li>
         </ol>
+        </div>
       </nav>
     </header>
 
     <!-- Home -->
     <main>
-      <section>
+      <section class="contenedor" id="Home">
         <h1>Hola! Soy <strong>Duván</strong>👋</h1>
         <p>
           Ingeniero Industrial y Administrador de Empresas, apasionado por la
@@ -31,45 +36,55 @@
           <strong>desarrollo web full stack</strong> y creo sitios funcionales,
           modernos y enfocados en el usuario.
         </p>
-
-        <!-- Project -->
       </section>
-      <h2>Mis proyectos.</h2>
 
-      <img src="./images/pet-shop.jpg" alt="Pet Shop" />
-      <h3>Mi Tienda Online</h3>
-      <p>
-        Diseño de una tienda virtual con HTML y CSS. Incluye carrito básico y
-        productos.
-      </p>
-      <p><strong>Tecnologías:</strong> HTML, CSS</p>
+      <!-- Project -->
+      <section class="contenedor" id="projects">
+        <h2>Mis proyectos.</h2>
 
-      <img src="./images/pagina-de-login.jpg" alt="Login" />
-      <h3>Login Interactivo</h3>
-      <p>Diseño de un login amigable con HTML y CSS.</p>
-      <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        <article class="proyecto 1">
+          <img src="./images/pet-shop.jpg" alt="Pet Shop"/>
+          <h3>Mi Tienda Online</h3>
+          <p>
+            Diseño de una tienda virtual con HTML y CSS. Incluye carrito básico
+            y productos.
+          </p>
+          <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        </article>
 
-      <img src="./images/desafio-tecnico-1.jpg" alt="Desafio Técnico" />
-      <h3>Mi Primer desafio</h3>
-      <p>
-        Diseño de mi primer pagina con HTML y CSS. Incluye creación de mi
-        repositorio en GitHub.
-      </p>
-      <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        <article class="proyecto 2">
+          <img src="./images/pagina-de-login.jpg" alt="Login"/>
+          <h3>Login Interactivo</h3>
+          <p>Diseño de un login amigable con HTML y CSS.</p>
+          <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        </article>
 
-      <img
-        src="./images/fundamentos-html-css.jpg"
-        alt="Fundamentos html y css"
-      />
-      <h3>Fundamentos desarrollo web</h3>
-      <p>
-        Conceptos basicos de HTML y CSS aprendidos durante el BootCamp realizado
-        en BIT.
-      </p>
-      <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        <article class="proyecto 3">
+          <img src="./images/desafio-tecnico-1.jpg" alt="Desafio Técnico"/>
+          <h3>Mi Primer desafio</h3>
+          <p>
+            Diseño de mi primer pagina con HTML y CSS. Incluye creación de mi
+            repositorio en GitHub.
+          </p>
+          <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        </article>
+
+        <article class="proyecto 4">
+          <img
+            src="./images/fundamentos-html-css.jpg"
+            alt="Fundamentos html y css"
+          />
+          <h3>Fundamentos desarrollo web</h3>
+          <p>
+            Conceptos basicos de HTML y CSS aprendidos durante el BootCamp
+            realizado en BIT.
+          </p>
+          <p><strong>Tecnologías:</strong> HTML, CSS</p>
+        </article>
+      </section>
 
       <!-- Habilidades -->
-      <section>
+      <section class="contenedor" id="habilidades">
         <h2>Habilidades</h2>
         <ul>
           <li>HTML5, CSS3, JavaScript</li>
@@ -84,7 +99,7 @@
       </section>
 
       <!-- About Me -->
-      <section>
+      <section class="contenedor" id="about-me">
         <h2>Sobre Mi.</h2>
         <img src="./images/me.jpg" alt="me" />
         <p>
@@ -121,7 +136,7 @@
       </section>
 
       <!-- Contacto -->
-      <section>
+      <section class="contenedor" id="contacto">
         <h2>Contacto</h2>
         <form action="">
           <div>
@@ -143,7 +158,7 @@
 
     <!-- pie de página -->
     <footer>
-      <ol>
+      <ol class="redes">
         <li>LinkedIn</li>
         <li>GitHub</li>
       </ol>
