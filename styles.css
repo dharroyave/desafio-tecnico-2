@@ -1,0 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/girls-marks');
+
+:root{
+    --color-fondo: #341C2A;
+    --color-texto: #FCF7FD;
+    --color-enfasis: #3A2136;
+    --color-enfasis2: #1B2815;
+    --tamaño-titulos: 30px;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Girls Marks',sans-serif; 
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    overflow-x: hidden;
+}
+
+/* ---------------------HEADER----------------- */
+header{
+    width: 96.5vw;
+}
