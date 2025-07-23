@@ -28,6 +28,11 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+
+
 /* ---------------------HEADER----------------- */
 header {
     grid-area: header;
@@ -36,16 +41,24 @@ header {
     text-align: right;
 }
 
-/* .logo {
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo img {
     width: 100px;
-    height: 10px;
+    /* height: 100px; */
     border-radius: 50%;
     padding: auto;
+}
 
-} */
-
-.lista{
+.lista ol {
     list-style: none;
+    display: flex;
+    gap: 20px;
 
 }
 
