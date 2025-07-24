@@ -1,9 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/girls-marks');
 
 :root {
-    --color-fondo: #341C2A;
+    --color-fondo: #181617;
     --color-texto: #FCF7FD;
-    --color-enfasis: #3A2136;
+    --color-enfasis: #ad2096;
     --color-enfasis2: #1B2815;
     --tamaño-titulos: 30px;
 }
@@ -28,29 +28,23 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
-
-
 /* ---------------------HEADER----------------- */
 header {
     grid-area: header;
-    background-color: red;
+    background-color: rgb(44, 43, 43);
     padding: 1rem;
-    text-align: right;
+    text-align: center;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo img {
     width: 100px;
-    /* height: 100px; */
+    height: 100px;
     border-radius: 50%;
     padding: auto;
 }
@@ -58,8 +52,17 @@ header {
 .lista ol {
     list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 7px;
+    box-shadow: 
+    0px 2px 2px 2px 2px rgb(0, 0, 0 , 0.088);
+}
 
+li{
+    padding: 10px 20px ;
+    cursor: pointer;
 }
 
 /* -------------- FOOTER ---------------- */
@@ -68,12 +71,22 @@ footer {
     background-color: #341C2A;
     color: white;
     text-align: center;
-    padding: 3rem;
-    font-size: 1,5rem;
+    padding: 1rem;
 }
 
 .redes {
-list-style: none;
-text-align: center;
-padding: 2rem;
+    background: red;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 
+    0px 2px;
+    
+}
+
+li{
+    padding: 10px 20px;
+    cursor: pointer;
 }
