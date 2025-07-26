@@ -20,7 +20,7 @@
 body {
     background: var(--darker-bg);
     color: var(--text-light);
-    font-family: "Exo 2", sans-serif;
+    font-family: 'Orbitron', sans-serif;
     line-height: 1.7;
     overflow-x: hidden;
     height: 100vh;
@@ -244,112 +244,99 @@ p {
     background: linear-gradient(45deg, var(--dark-bg), var(--darker-bg));
 }
 
-/* ----project----- */
-#projects {
-  padding: 2rem;
-  background-color: #0D0D0D;
-  color: white;
-}
-
-#projects h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #F21D44;
-  font-family: 'Orbitron', sans-serif;
-}
-
-.contenedor {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.proyecto {
-  background-color: #1A1A1A;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(242, 29, 68, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.proyecto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(242, 29, 68, 0.3);
-}
-
-.proyecto img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.proyecto h3 {
-  color: #F21D44;
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  font-family: 'Orbitron', sans-serif;
-}
-
-.proyecto p {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: #CCCCCC;
-}
-
-
-/* -----about me------- */
-body {
-    font-family: 'Orbitron', sans-serif;
-    background-color: #0D0D0D;
-    color: #FFFFFF;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+/* -------project--------- */
 
 h2 {
     font-size: 2rem;
-    color: #F21D44;
+    color: var(--neon-red);
+    padding: 1,5rem;
+    margin: 2rem auto;
+    max-width: 90%;
+}
+
+.contenedor-proyectos{
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.proyecto {
+    background: var(--darker-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(242, 29, 68, 0.3);
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 8px;
     margin-bottom: 1rem;
-    border-left: 5px solid #D93A2B;
-    padding-left: 0.75rem;
 }
 
-.contenedor {
-    max-width: 900px;
-    margin: 4rem auto;
-    padding: 0 1.5rem;
+.proyecto h3 {
+    color: var(--neon-red);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Sección "Sobre mí" */
-#about-me p {
+.proyecto p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--text-dim);
+}
+
+/* -----about me------- */
+
+.contenedor-me {
+    padding: 0 8rem;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.contenedor-me p {
     margin-bottom: 1.25rem;
     font-size: 1rem;
-    color: #E0E0E0;
+    color: var(--text-dim);
+    text-align: justify;
+    text-justify: inter-word;    
 }
 
-/* Sección "Habilidades" */
-#habilidades ul {
-    list-style: none;
-    padding: 0;
+/*--------Habilidades----------- */
+.contenedor-habilidades ul {
+    padding: 0 8rem;
+    max-width: auto;
+    margin: 0 auto;
+    list-style: none;  
+    color: var(--text-dim); 
 }
 
-#habilidades li {
-    background: #1A1A1A;
+.contenedor-habilidades li {
     margin-bottom: 0.75rem;
     padding: 0.75rem 1rem;
-    border-left: 4px solid #8C0D24;
+    border-left: 4px solid rgba(242, 29, 68, 0.1);
     border-radius: 6px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease; 
 }
 
-#habilidades li:hover {
-    background: #2D2D2D;
+.contenedor-habilidades li:hover {
+    background: rgba(255, 0, 60, 0.4);
 }
 
 /* ------------Contacto---------------*/
-#contacto form {
+.contenedor-contacto form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -359,14 +346,14 @@ h2 {
     box-shadow: 0 0 20px rgba(242, 29, 68, 0.1);
 }
 
-#contacto label {
+.contenedor-contacto label {
     display: block;
     margin-bottom: 0.5rem;
     color: var(--neon-red);
 }
 
-#contacto input,
-#contacto textarea {
+.contenedor-contacto input,
+.contenedor-contacto textarea {
     width: 100%;
     padding: 0.8rem 1rem;
     border: none;
@@ -376,12 +363,12 @@ h2 {
     font-size: 1rem;
 }
 
-#contacto input:focus,
-#contacto textarea:focus {
+.contenedor-contacto input:focus,
+.contenedor-contacto textarea:focus {
     outline: 2px solid rgba(255, 0, 60, 0.4);
 }
 
-#contacto button {
+.contenedor-contacto button {
     background-color: var(--neon-red);
     color: var(--text-light);
     border: none;
@@ -393,7 +380,7 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-#contacto button:hover {
+.contenedor-contacto button:hover {
     background-color: var(--neon-red);
     color: #000;
     transform: translate(-8px);
