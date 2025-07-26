@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bossvanrave.dev</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Nav -->
     <header>
       <nav class="menu">
-        <div class="logo">
-          bossvanrave
-          <!-- bossvanrave<img src="./images/logo.jpg" alt="logo" /> -->
-        </div>
-
-        <div class="lista">
-          <ol>
-            <li>Home</li>
-            <li>Proyectos</li>
-            <li>Habilidades</li>
-            <li>Sobre me</li>
-            <li>Contacto</li>
-          </ol>
+        <a href="#" class="logo">DVN<span>DEV</span></a>
+        <div class="menu-links">
+          <a href="" class="menu-link">Home</a>
+          <a href="" class="menu-link">Proyectos</a>
+          <a href="" class="menu-link">About</a>
+          <a href="" class="menu-link">Contacto</a>
         </div>
       </nav>
     </header>
@@ -30,13 +30,31 @@
     <!-- Home -->
     <main>
       <section class="contenedor" id="Home">
-        <h1>Hola! Soy <strong>Duván</strong>👋</h1>
-        <p>
-          Ingeniero Industrial y Administrador de Empresas, apasionado por la
-          tecnología. Actualmente me dedico al
-          <strong>desarrollo web full stack</strong> y creo sitios funcionales,
-          modernos y enfocados en el usuario.
-        </p>
+        <div class="home-contenedor">
+          <div class="home-text">
+            <h1>Hola! Soy Duván</h1>
+            <p>
+              Ingeniero Industrial y Administrador de Empresas, apasionado por
+              la tecnología. Actualmente me dedico al desarrollo web full stack
+              y creo sitios funcionales, modernos y enfocados en el usuario.
+            </p>
+            <div class="btn-grupo">
+              <a href="#proyectos" class="btn btn-primario">
+                <i class="fa-solid fa-rocket"></i>Ver Proyectos
+              </a>
+              <a href="#" class="btn">
+                <i class="fa-solid fa-paper-plane"></i> Contactame
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-perfil">
+          <div class="envoltura-perfil">
+            <img src="./images/me.jpg" alt="me" class="img-perfil" />
+            <div class="efecto-glow"></div>
+          </div>
+        </div>
       </section>
 
       <!-- Project -->
@@ -84,25 +102,9 @@
         </article>
       </section>
 
-      <!-- Habilidades -->
-      <section class="contenedor" id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-          <li>HTML5, CSS3, JavaScript</li>
-          <li>React, Next.js</li>
-          <li>Node.js, Express</li>
-          <li>Base de datos: MongoDB, PostgreSQL</li>
-          <li>Control de versiones: Git y GitHub</li>
-          <li>Diseño responsivo y UX/UI</li>
-          <li>Automatización de procesos (visión industrial)</li>
-          <li>Análisis de datos y optimización de recursos</li>
-        </ul>
-      </section>
-
       <!-- About Me -->
       <section class="contenedor" id="about-me">
         <h2>Sobre Mi.</h2>
-        <img src="./images/me.jpg" alt="me" />
         <p>
           Soy Duvan Arroyave, Ingeniero Industrial y Administrador de Empresas
           colombiano con una fuerte pasión por la tecnología y el desarrollo
@@ -136,6 +138,21 @@
         </p>
       </section>
 
+      <!-- Habilidades -->
+      <section class="contenedor" id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Next.js</li>
+          <li>Node.js, Express</li>
+          <li>Base de datos: MongoDB, PostgreSQL</li>
+          <li>Control de versiones: Git y GitHub</li>
+          <li>Diseño responsivo y UX/UI</li>
+          <li>Automatización de procesos (visión industrial)</li>
+          <li>Análisis de datos y optimización de recursos</li>
+        </ul>
+      </section>
+
       <!-- Contacto -->
       <section class="contenedor" id="contacto">
         <h2>Contacto</h2>
@@ -159,12 +176,23 @@
 
     <!-- pie de página -->
     <footer>
-      <ol class="redes">
-        <li>LinkedIn</li>
-        <li>GitHub</li>
-      </ol>
-
-      <p>&copy; 2025 Duvan Arroyave. Todos los derechos reservados.</p>
+      <div class="contenedor-footer">
+        <div class="redes">
+          <a href="#" class="red-social"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="red-social"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="red-social"
+            ><i class="fa-brands fa-telegram"></i
+          ></a>
+          <a href="#" class="red-social"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; 2025 DvnDev. Todos los derechos reservados.
+      </p>
     </footer>
   </body>
 </html>
