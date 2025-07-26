@@ -3,7 +3,7 @@
 
 ## 📸 Vista previa
 
-![Screenshot del portafolio](./images/screenshot.png)
+./images/screenshot.png
 
 ---
 
@@ -29,13 +29,3 @@
 4. **Fundamentos HTML y CSS**  
    Ejercicio práctico del bootcamp con conceptos clave del desarrollo web.
 
----
-
-## 🚀 Cómo ver el proyecto
-
-Puedes clonar este repositorio o simplemente abrir `index.html` en tu navegador.
-
-```bash
-git clone https://github.com/tuusuario/portafolio-dvndev.git
-cd portafolio-dvndev
-start index.html
